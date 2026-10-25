@@ -19,3 +19,33 @@ dependencies = [
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src"]
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "W",
+    "I",
+    "B",
+    "UP", 
+    "S",
+    "E4",
+    "E7",
+]
+
+[tool.mypy]
+python_version = "3.13"
+mypy_path = "src"
+strict = true
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
