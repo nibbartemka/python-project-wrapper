@@ -25,6 +25,6 @@ complexity: ## Run cyclomatic complexity check
 	poetry run radon cc src -s -a
 
 security: ## Run security check
-	poertry run bandit -r src -ll
+	poetry run bandit -r src -ll
 
 check: lint format typecheck test complexity security
