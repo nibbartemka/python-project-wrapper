@@ -1,4 +1,4 @@
-from .base import Shape, Numeric
+from .base import Numeric, Shape
 
 
 class Rectangle(Shape):
@@ -11,7 +11,7 @@ class Rectangle(Shape):
 
     @property
     def perimeter(self) -> Numeric:
-        return 2*self.a + 2*self.b
+        return 2 * self.a + 2 * self.b
 
     @property
     def area(self) -> Numeric:

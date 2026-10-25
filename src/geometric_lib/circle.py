@@ -1,6 +1,6 @@
 from math import pi
 
-from .base import Shape, Numeric
+from .base import Numeric, Shape
 
 
 class Circle(Shape):
