@@ -48,4 +48,5 @@ exclude_dirs = ["tests"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 addopts = "-ra --strict-markers"
