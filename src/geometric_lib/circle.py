@@ -3,7 +3,7 @@ from math import pi
 from .base import Shape, Numeric
 
 
-class Cirсle(Shape):
+class Circle(Shape):
     def __init__(self, radius: Numeric) -> None:
         if radius <= 0:
             raise ValueError("radius has to be more than 0")

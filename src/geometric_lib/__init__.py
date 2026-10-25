@@ -1,4 +1,4 @@
-from .circle import Cirсle
+from .circle import Circle
 from .rectangle import Rectangle
 
 __all__ = [
