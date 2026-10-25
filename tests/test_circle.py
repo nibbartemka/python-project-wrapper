@@ -25,7 +25,7 @@ class TestCircleArea:
     def test_area_non_positive_raises(self, radius: float) -> None:
         """Non-positive radius raises ValueError."""
         with pytest.raises(ValueError, match="more than 0"):
-            Circle(radius).area
+            _ = Circle(radius).area
 
 
 class TestCirclePerimeter:
@@ -49,4 +49,4 @@ class TestCirclePerimeter:
     def test_perimeter_non_positive_raises(self, radius: float) -> None:
         """Non-positive radius raises ValueError."""
         with pytest.raises(ValueError, match="more than 0"):
-            Circle(radius).perimeter
+            _ = Circle(radius).perimeter
