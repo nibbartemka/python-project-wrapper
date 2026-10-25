@@ -50,3 +50,6 @@ exclude_dirs = ["tests"]
 testpaths = ["tests"]
 pythonpath = ["."]
 addopts = "-ra --strict-markers"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["S101", "B018"]
