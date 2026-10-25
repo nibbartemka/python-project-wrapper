@@ -1,7 +1,6 @@
 import math
 
 import pytest
-
 from src.geometric_lib import Circle
 
 

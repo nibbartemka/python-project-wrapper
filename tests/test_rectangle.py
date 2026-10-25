@@ -1,5 +1,4 @@
 import pytest
-
 from src.geometric_lib import Rectangle
 
 
